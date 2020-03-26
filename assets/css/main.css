@@ -291,7 +291,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
-		font-weight: bold;
+		font-weight: "montserratbold";
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
 	}
@@ -3855,6 +3855,7 @@ input, select, textarea {
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
+			font-family: "montserratlight";
 			color: rgba(255, 255, 255, 0.35);
 			display: block;
 			font-size: 0.6em;
