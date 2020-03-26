@@ -1,5 +1,109 @@
 @import url(fontawesome-all.min.css);
 
+@font-face {
+    font-family: 'montserratblack';
+    src: url('montserrat/montserrat-black-webfont.woff2') format('woff2'),
+         url('montserrat/montserrat-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+         url('montserrat/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratextrabold';
+    src: url('montserrat/montserrat-extrabold-webfont.woff2') format('woff2'),
+         url('montserrat/montserrat-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratextralight';
+    src: url('montserrat/montserrat-extralight-webfont.woff2') format('woff2'),
+         url('montserrat/montserrat-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('montserrat/montserrat-light-webfont.woff2') format('woff2'),
+         url('montserrat/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('montserrat/montserrat-medium-webfont.woff2') format('woff2'),
+         url('montserrat/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+         url('montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratsemibold';
+    src: url('montserrat/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('montserrat/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratthin';
+    src: url('montserrat/montserrat-thin-webfont.woff2') format('woff2'),
+         url('montserrat/montserrat-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /*
 Theme Name: Hyperspace
@@ -127,7 +231,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.55);
-		font-family: "Montserrat";
+		font-family: "montserrat-thin";
 		font-size: 16.5pt;
 		font-weight: lighter;
 		line-height: 1.75;
