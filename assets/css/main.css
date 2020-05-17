@@ -324,9 +324,7 @@ input, select, textarea {
 	#hero{
 		position: relative;
 		margin: 0 auto;
-		/* position:absolute; */
-		/* left: 200px;
-		top: 520px; */
+		opacity: 0;
 	}
 
 	#laser{
@@ -334,8 +332,7 @@ input, select, textarea {
 		width: 2px;
 		height: 25px;
 		position: relative;
-		/* left: 223px;
-		top: 525px; */
+		opacity: 0;
 	}
 
 	strong, b {

@@ -136,6 +136,8 @@
 				var hero_left = 0;
 				var hero_top = 0;
 				$(document).mousemove(function(e){
+					$("#hero").css({ opacity: 1 });
+					$("#laser").css({ opacity: 1 });
 					$('#hero').offset({
 						left: e.pageX - 20,
 						top: $("#first-page").height() * 0.9
