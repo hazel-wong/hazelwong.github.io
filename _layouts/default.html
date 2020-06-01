@@ -135,6 +135,8 @@
 				var hero_center = $("#hero").width()/2;
 				var hero_left = 0;
 				var hero_top = 0;
+
+				var first_page = $("#first-page").getBoundingClientRect();
 				$(document).mousemove(function(e){
 					$("#hero").css({ opacity: 1 });
 					$("#laser").css({ opacity: 1 });
@@ -142,10 +144,10 @@
 						left: e.pageX - 20,
 						top: $("#first-page").height() * 0.9
 					});
-					if (e.pageX <= $("#first-page").width() * 0.1)
+					if (e.pageX <= $("#first-page").width() * 0.1 + first_page.left)
 					{
 						$('#hero').offset({
-							left: $("#first-page").width() * 0.1 + 20,
+							left: $("#first-page").width() * 0.1 + first_page.left + 20,
 							top: $("#first-page").height() * 0.9
 						});
 					}
