@@ -149,10 +149,10 @@
 							top: $("#first-page").height() * 0.9
 						});
 					}
-					else if (e.pageX >= $(window).width() - ($(window).width() * 0.15))
+					else if (e.pageX >= $("#first-page").width() - ($("#first-page").width() * 0.15))
 					{
 						$('#hero').offset({
-							left: $(window).width() - ($(window).width() * 0.15) - 20,
+							left: $("#first-page").width() - ($("#first-page").width() * 0.15) - 20,
 							top: $("#first-page").height() * 0.9
 						});
 					}
