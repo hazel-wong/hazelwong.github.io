@@ -142,17 +142,17 @@
 						left: e.pageX - 20,
 						top: $("#first-page").height() * 0.9
 					});
-					if (e.pageX <= $(window).width() * 0.15)
+					if (e.pageX <= $("#first-page").width() * 0.1)
 					{
 						$('#hero').offset({
-							left: $(window).width() * 0.15 - 20,
+							left: $("#first-page").width() * 0.1 - 20,
 							top: $("#first-page").height() * 0.9
 						});
 					}
-					else if (e.pageX >= $("#first-page").width() - ($("#first-page").width() * 0.15))
+					else if (e.pageX >= $("#first-page").width() - ($("#first-page").width() * 0.1))
 					{
 						$('#hero').offset({
-							left: $("#first-page").width() - ($("#first-page").width() * 0.15) - 20,
+							left: $("#first-page").width() - ($("#first-page").width() * 0.1) - 20,
 							top: $("#first-page").height() * 0.9
 						});
 					}
