@@ -134,8 +134,7 @@ Copyright (c) 2018 - PxDraft
             loop:true,
             strings: [
               'Game Designer',
-              'Game Developer',
-              'Front-end Web Developer'
+              'Game Developer'
             ],
             breakLines: false
         }); 
