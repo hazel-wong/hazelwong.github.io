@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Hazel Wong</title>
+  <title>Thomson-Minimal Portfolio Temaplate</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,20 +23,16 @@
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
 
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico" />
-
 </head>
 
-<body style="height: 100vh; display: flex; flex-direction: column;">
+<body>
   
-<!-- Navigation Start -->
 <!-- Header Start --> 
 
 <nav class="navbar navbar-expand-lg  main-nav " id="navbar">
 	<div class="container">
 	  <a class="navbar-brand" href="index.html">
-		<img src="images/black-logo.png" alt="" class="img-fluid" style="width: 75px; padding: 5px">
+	  	<img src="images/logo.png" alt="" class="img-fluid">
 	  </a>
 
 	  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,12 +41,17 @@
   
 		  <div class="collapse navbar-collapse" id="navbarsExample09">
 			<ul class="navbar-nav ml-auto">
-			  <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-			  <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
-			  <li class="nav-item active"><a class="nav-link" href="portfolio-3.html">Portfolio</a></li>
-			  <li class="nav-item active"><a class="nav-link" href="blog-grid.html">DevBlog</a></li>
-			  <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
-			  <!-- <li class="nav-item dropdown active">
+			  <li class="nav-item  active"><a class="nav-link" href="index.html">Home</a></li>
+
+			  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+					<ul class="dropdown-menu" aria-labelledby="dropdown01">
+						<li><a class="dropdown-item" href="about.html">About Me</a></li>
+						<li><a class="dropdown-item" href="about-us.html">About Us</a></li>
+					</ul>
+			  </li>
+
+			  <li class="nav-item dropdown active">
 					<a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
 					<ul class="dropdown-menu" aria-labelledby="dropdown02">
 						<li><a class="dropdown-item" href="portfolio-1.html">Portfolio Masonary</a></li>
@@ -58,8 +59,8 @@
 						<li><a class="dropdown-item" href="portfolio-3.html">Portfolio 2 column</a></li>
 						<li><a class="dropdown-item" href="portfolio-single.html">Portfolio Details</a></li>
 					</ul>
-			  </li> -->
-			   <!-- <li class="nav-item dropdown">
+			  </li>
+			   <li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
 					<ul class="dropdown-menu" aria-labelledby="dropdown05">
 						<li><a class="dropdown-item" href="blog-grid.html">Blog Grid</a></li>
@@ -67,8 +68,8 @@
 
 						<li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
 					</ul>
-			  </li> -->
-			   
+			  </li>
+			   <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -77,34 +78,21 @@
 <!-- Header Close --> 
 
 
-<!-- Navigation ENd -->
 
-<!-- Banner Start -->
-<section class="section banner" style="margin-top: auto; margin-bottom: auto">
+<section class="section banner pb-0">
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-10">
-				 <h2 class="cd-headline clip is-full-width mb-4 ">
-				 	I am <br>
-                    <span class="cd-words-wrapper text-color">
-                        <b class="is-visible">Hazel Wong. </b>
-                        <b>A Game Developer.</b>
-						<b>A Game Designer.</b>
-                    </span>
-                </h2>
-                <!-- <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain <br>was born and I will give you a complete account of the system</p> -->
+		<div class="row justify-content-center">
+			<div class="col-lg-8 text-center">
+				<h2>I provide <span class="text-color">Design Solutions.</span> <br>My work is presented here, check them below.</h2>
 			</div>
 		</div>
 	</div>
 </section>
 
-<!-- Banner End -->
-
-<!-- POrtfolio start -->
-<!-- <section class="portfolio ">
+<section class=" portfolio ">
 	<div class="container">
-		<div class="row mb-5">
-	      	<div class="col-10">
+		<div class="row mb-5 justify-content-center">
+	      	<div class="col-10 text-center">
 		        <div class="btn-group btn-group-toggle " data-toggle="buttons">
 		          <label class="btn active ">
 		            <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
@@ -131,12 +119,15 @@
 		          <div class="image position-relative ">
 	               <img src="images/portfolio/1.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
 	                <div class="overlay-box">
-	                  <div class="overlay-inner">
-	                    <a class="overlay-content" href="portfolio-single.html">
-	                      <h5 class="mb-0">Painting</h5>
-	                      <p>Design</p>
-	                    </a>
-	                  </div>
+	                	<a class="portfolio-image popup-gallery" href="images/portfolio/1.jpg">
+	                  		<i class="ti-plus"></i>
+	                  	</a>
+		                  <div class="overlay-inner">
+		                    <div class="overlay-content">
+		                      <h5 class="mb-0">Painting</h5>
+		                      <p>Design</p>
+		                    </div>
+		                  </div>
 	                </div> 
 	            </div>
 		      </div>
@@ -145,16 +136,19 @@
 	      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;branding&quot;]">
 	        <div class="position-relative inner-box" >
 	            <div class="image position-relative ">
-	               <img src="images/portfolio/4.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
+	               <img src="images/portfolio/bag.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
 	                <div class="overlay-box">
-	                  <div class="overlay-inner">
-		                    <a class="overlay-content" href="portfolio-single.html">
+	                	<a class="portfolio-image popup-gallery " href="images/portfolio/bag.jpg">
+	                  		<i class="ti-plus"></i>
+	                  	</a>
+		                  <div class="overlay-inner">
+		                    <div class="overlay-content">
 		                      <h5 class="mb-0">Web app</h5>
 		                      <p>Development</p>
-		                    </a>
-	                	</div> 
-		            </div>
-		        </div>
+		                    </div>
+			            </div>
+			        </div>
+			      </div>
 		      </div>
 	      </div>
 
@@ -163,11 +157,14 @@
 	            <div class="image position-relative ">
 	               <img src="images/portfolio/3.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
 	                <div class="overlay-box">
+	                	<a class="portfolio-image popup-gallery" href="images/portfolio/3.jpg">
+	                  		<i class="ti-plus"></i>
+	                  	</a>
 	                  <div class="overlay-inner">
-	                    <a class="overlay-content" href="portfolio-single.html">
-	                      <h5 class="mb-0">Business </h5>
+	                    <div class="overlay-content">
+	                      <h5 class="mb-0 ">Business </h5>
 	                      <p>marketing</p>
-	                    </a>
+	                    </div>
 	                  </div>
 	                </div> 
 	            </div>
@@ -177,13 +174,16 @@
 	      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;,&quot;branding&quot;]">
 	        <div class="position-relative inner-box">
 	            <div class="image position-relative ">
-	               <img src="images/portfolio/5.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
+	               <img src="images/portfolio/m-3.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
 	                <div class="overlay-box">
+	                	<a class="portfolio-image popup-gallery" href="images/portfolio/m-3.jpg">
+	                  		<i class="ti-plus"></i>
+	                  	</a>
 	                  <div class="overlay-inner">
-	                    <a class="overlay-content" href="portfolio-single.html">
+	                    <div class="overlay-content">
 	                      <h5 class="mb-0">Portfolio</h5>
 	                      <p>Design</p>
-	                    </a>
+	                    </div>
 	                  </div>
 	                </div> 
 	            </div>
@@ -193,13 +193,16 @@
 	      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;illustration&quot;]">
 	        <div class="position-relative inner-box">
 	            <div class="image position-relative ">
-	               <img src="images/portfolio/6.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
+	               <img src="images/portfolio/bottle.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
 	                <div class="overlay-box">
+	                	<a class="portfolio-image popup-gallery" href="images/portfolio/bottle.jpg">
+	                  		<i class="ti-plus"></i>
+	                  	</a>
 	                  <div class="overlay-inner">
-	                    <a class="overlay-content" href="portfolio-single.html">
-	                       <h5 class="mb-0 ">Modern web</h5>
+	                    <div class="overlay-content">
+	                       <h5 class="mb-0">Modern web</h5>
 	                      	<p>Seo</p>
-	                    </a>
+	                    </div>
 	                  </div>
 	                </div> 
 	            </div>
@@ -209,13 +212,16 @@
 	      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;,&quot;photo&quot;]">
 	        <div class="position-relative inner-box">
 	            <div class="image position-relative ">
-	               <img src="images/portfolio/7.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
+	               <img src="images/portfolio/6.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
 	                <div class="overlay-box">
+	                	<a class="portfolio-image popup-gallery" href="images/portfolio/6.jpg">
+	                  		<i class="ti-plus"></i>
+	                  	</a>
 	                  <div class="overlay-inner">
-	                    <a class="overlay-content" href="portfolio-single.html">
+	                    <div class="overlay-content">
 	                       <h5 class="mb-0">Agency web</h5>
 	                      	<p>Design</p>
-	                    </a>
+	                    </div>
 	                  </div>
 	                </div> 
 	            </div>
@@ -223,69 +229,9 @@
 	      </div>
 	    </div>
 	</div>
-</section> -->
-<!-- Portfolio End -->
+</section>
 
-<!-- Service start -->
-<!-- <section class="section service-home border-top">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6">
-				<h2 class="mb-2 ">Core Services.</h2>
-				<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, totam ipsa quia hic odit a sit laboriosam voluptatem in, blanditiis.</p>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-lg-4">
-				<div class="service-item mb-5" data-aos="fade-left" >
-					<i class="ti-layout"></i>
-					<h4 class="my-3">Web Development</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.</p>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="service-item mb-5" data-aos="fade-left"  data-aos-delay="450">
-					<i class="ti-announcement"></i>
-					<h4 class="my-3">Digital Marketing</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.</p>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="service-item mb-5 mb-lg-0" data-aos="fade-left"  data-aos-delay="750">
-					<i class="ti-layers"></i>
-					<h4 class="my-3">Graphics Design</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.</p>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="service-item" data-aos="fade-left"  data-aos-delay="750">
-					<i class="ti-anchor"></i>
-					<h4 class="my-3">Branding Design</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.</p>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="service-item mb-5" data-aos="fade-left"  data-aos-delay="950">
-					<i class="ti-video-camera"></i>
-					<h4 class="my-3">Video Marketing</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.</p>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="service-item mb-5 mb-lg-0" data-aos="fade-left"  data-aos-delay="1050">
-					<i class="ti-android"></i>
-					<h4 class="my-3">App Design</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
-<!-- service end -->
-
-<!-- Footer start -->
-<section class="footer" style="margin-bottom: 0; margin-top: auto; margin-top: 0;">
+<section class="footer">
 	<div class="container">
 		<div class="row ">
 			<div class="col-lg-6">
@@ -307,8 +253,6 @@
 		</div>
 	</div>
 </section>
-<!-- Footer End -->
-
 <!-- jQuery -->
 <script src="plugins/jQuery/jquery.min.js"></script>
 <!-- Bootstrap JS -->
