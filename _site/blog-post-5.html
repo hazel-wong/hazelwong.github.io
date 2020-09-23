@@ -82,7 +82,7 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="text-center">
-          <h1 class="text-capitalize mb-0 text-lg">Stakeholder Archetypes / Audience Information</h1>
+          <h1 class="text-capitalize mb-0 text-lg">Interviews, Prototyping / Experimentation</h1>
         </div>
       </div>
     </div>
@@ -103,17 +103,58 @@
 			<span>Development</span> -->
 
 			<!-- <span class="ml-3">-</span> -->
-			<span class="date">14 SEPT 2020</span>
+			<span class="date">23 SEPT 2020</span>
 		</div>
 
-		<p>This week, I compiled stakeholders that I believe would benefit most from my research.</p>
+		<p>This week, I contacted five stakeholders to ask whether it would be possible to conduct interviews to learn more about procedural generation in video games. In addition, I started experimenting with my research idea by simplifying my research problem. I looked at procedural generating levels for the simplest puzzle game I could think of, mazes. I followed a tutorial that procedurally generated maze levels algorithmically and used the generated data to create meshes for the level. Through this tutorial, I was able to learn how to implement a simple procedural generation algorithm and represent it visually on Unity.</p>
+		<p><b>Tutorial:  </b><span><a href="https://www.raywenderlich.com/82-procedural-generation-of-mazes-with-unity">https://www.raywenderlich.com/82-procedural-generation-of-mazes-with-unity</a></span></p>
+		<p><b>Final Game:  </b><span><a href="http://www-personal.umich.edu/~hazwong/Maze_Tutorial/">http://www-personal.umich.edu/~hazwong/Maze_Tutorial/</a></span></p>
 		<br/>
-		<h4>Stakeholder Archetypes/Audience Information</h4>
-		<p>Game developers, especially those who are developing puzzle games, would benefit the most from my results. Generally, game developers work in game development studios, where they code the base engine of video games, generate levels for video games and translate ideas discussed in meetings into code. Oftentimes, they may be faced with optimization, time, cost  or memory issues which could be fixed with procedurally generating levels. Being able to efficiently generate solvable levels could be important to game developers as it could save development time. money and memory usage. Resources that developers tend to have at their disposal are a decently sized team of developers and game development technology.</p>
-		
+		<h4>The Tutorial</h4>
+		<p>The tutorial starts off by providing a Unity starter package that includes:</p>
+		<ul>
+			<li>two C# scripts, a simple player movement script and a trigger handler script</li>
+			<li>a scene with a player, a spotlight, a camera and UI for score and time</li>
+			<li>a graphics folder with materials for the maze wall, ceiling and floor</li>
+		</ul>
+		<p>The tutorial walked me through how to write a GameController script that handles the overall game, a MazeConstructor script that manages the generation of mazes, a MazeDataGenerator script that initializes the maze, and a MazeMeshGenerator script that creates meshes for the maze from the maze data. </p>
+		<p>Essentially, the flow of the program is as follows: the developer specifies dimensions for the maze in MazeDataGenerator. Then using a maze generation algorithm, MazeDataGenerator generates a random maze in the form of a 2D array. The MazeConstructor then iterates through the 2D array, adding start and goal positions algorithmically. Then MazeMeshGenerator is called in MazeConstructor to add meshes to the maze based on the 2D array. Finally, the GameController creates the maze on Unity.</p>
 		<br/>
+		<h4>The Maze Generation Algorithm</h4>
+		<!-- <br> -->
+		<h5>Maze Paths</h5>
+		<p>The maze generation algorithm is written in MazeDataGenerator and is given the size of the 2D array as inputs. It is a simple algorithm that has two nested for loops to iterate through the cells in the array. A “0” or “1” is assigned to a cell to represent whether a cell is open or blocked, respectively.</p>
+		<p>The algorithm starts at the first cell of the array at (0,0). First, the algorithm checks whether a cell is on the edge of the maze. If the cell is on the edge, then it is assigned a 1. Then the algorithm iterates through every other cell, by checking whether the cell is even or odd. If the cell is odd, then it is assigned a 0. If the cell is even, the algorithm randomly generates a value. If the value is above a certain threshold, then the cell is assigned a 0, otherwise it’s assigned a 1. Rather than just simply adding a wall to every other cell, the generation of a random value is to encourage open spaces in the maze rather than having it filled with tight corridors. Finally, once a cell is assigned a 1, the algorithm randomly selects an adjacent cell and assigns a 1 to that cell as well.</p>
+		<!-- <br> -->
+		<h5>Adding Start and Goal Positions</h5>
+		<p>Once the maze has been generated, the algorithm goes through the 2D array again to add start and goal positions. To add a start position, the algorithm starts at (0,0) and iterates through each cell in the array until it finds an empty cell. Similarly, to add a finish position, the algorithm starts at the max value and iterates through each cell in the array backwards until it finds an empty cell.</p>
+		<!-- <br> -->
+		<h5>Finishing Touches</h5>
+		<p>The final steps of the tutorial involves creating meshes for wall, ceiling, floor, the start position and the goal position based on the 2D array, incrementing the score once a goal has been found and starting a new maze once the timer runs out. Once I completed the tutorial, I built the game as a WebGL and uploaded it online.</p>
+		<br>
+		<h4>How to Play</h4>
+		<p>Find the game <span><a href="http://www-personal.umich.edu/~hazwong/Maze_Tutorial/"><b>here</b></a></span>!</p>
+		<h5>Objective</h5>
+		<p>Find the goal in the maze before the timer runs out! Once you’ve found the goal, travel back to the starting position to start a new level. If the timer runs out, the game is reset and a new maze is generated.</p>
+		<h5>Controls</h5>
+		<ul>
+			<li>Mouse: control camera</li>
+			<li>Arrow keys: control player movement</li>
+			<li>Spacebar: debug mode to show map of maze</li>
+		</ul>
+		<br>
+		<h4>Final Thoughts</h4>
+		<p>This tutorial was able to show me how to create simple mazes using a basic procedural generation algorithm and how to incorporate them into a video game by representing them visually on Unity. This tutorial had boosted my confidence in my research idea as it gave me an idea of how to possibly structure my code for my own puzzle game. It also made me less overwhelmed by my research idea as I now realize that procedural generation algorithms could be relatively simple depending on the scope of the game.</p>
+		<br>
+		<h4>Next Steps</h4>
+		<p>As this tutorial was rather simple, my next steps would be to look at more complex procedural generation algorithms and begin brainstorming ideas for a novel puzzle game.</p>
+		<br>
 		<h5>Sources</h5>
-		<a href="https://www.awesometuts.com/how-to-get-a-job-in-the-game-development-industry">https://www.awesometuts.com/how-to-get-a-job-in-the-game-development-industry</a>
+		<a href="https://www.raywenderlich.com/82-procedural-generation-of-mazes-with-unity">https://www.raywenderlich.com/82-procedural-generation-of-mazes-with-unity</a>
+		<br>
+		<a href="https://freesvg.org/the-maze">https://freesvg.org/the-maze</a>
+		
+
 		<!-- <div class="share mt-4">
 			<ul class="list-inline">
 				<li class="mb-3">Share Now :</li>
