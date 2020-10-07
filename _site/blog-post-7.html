@@ -127,7 +127,7 @@
 		<br><br>
 		<h5>Placing Rooms</h5>
 		<p>First, the algorithm places rooms in an empty grid at random. A single room is placed randomly on the grid, then the next room slides around the grid until it touches the edge of an existing room and has no overlaps with other rooms. Once the new room has been placed, a door is punched out. The algorithm repeats until there is no more space for new rooms. The rooms are randomly drawn as well. They could be a donut shape, a circle or a rectangle etc.</p>
-		<p>Once the rooms are placed, the algorithm runs five rounds of smoothing on the rooms to ensure that the rooms have space in them and there aren’t any walls that are randomly connected. Every floor tile that has more than fewer than four adjacent floor tiles becomes a wall, and every wall tile with 6+ adjacent floor tiles becomes a floor tile. After the five rounds of smoothing, the biggest room is selected as the first room.</p>
+		<p>Once the rooms are placed, the algorithm runs five rounds of smoothing on the rooms to ensure that the rooms have space in them and there aren’t any walls that are randomly connected. Every floor tile that has fewer than four adjacent floor tiles becomes a wall, and every wall tile with 6+ adjacent floor tiles becomes a floor tile. After the five rounds of smoothing, the biggest room is selected as the first room.</p>
 		<p>Finally, the algorithm checks for wall tiles that have floor tiles on either sides and are a certain distance apart. For these tiles, the algorithm would punch a door to connect the two rooms.</p>
 		<img width="700" src="images/blog/brogue-room.png"/>
 		<br><br>
