@@ -1,330 +1,575 @@
-<!DOCTYPE html>
-<html lang="zxx">
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <title>Hazel Wong</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Template by CocoBasic" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
+        <meta name="author" content="CocoBasic" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <meta charset="utf-8">
-  <title>Hazel Wong</title>
+        <link rel="shortcut icon" href="images/favicon.ico" />      
+        <link href='https://fonts.googleapis.com/css?family=Poppins:400,700,800' rel='stylesheet' type='text/css'>	             
+        <link rel="stylesheet" type="text/css"  href='style.css' />
 
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
-  <!-- ** Plugins Needed for the Project ** -->
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
-  <link rel="stylesheet" href="plugins/counto/animate.css">
-  <link rel="stylesheet" href="plugins/aos/aos.css">
-  <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.default.min.css">
-  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
-  <link rel="stylesheet" href="plugins/animated-text/animated-text.css">
+        <!--[if lt IE 9]>
+                <script src="js/html5.js"></script>            
+                <script src="js/respond.min.js"></script>                   
+        <![endif]-->                
+    </head>
 
-  <!-- Main Stylesheet -->
-  <link href="css/style.css" rel="stylesheet">
+    <body>
 
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico" />
+        <!-- Preloader Gif -->
+        <div class="doc-loader">
+            <img src="images/preloader.gif" alt="Loading">
+        </div>
 
-</head>
+        <div id="content" class="site-content">
 
-<body style="height: 100vh; display: flex; flex-direction: column;">
-  
-<!-- Navigation Start -->
-<!-- Header Start --> 
+            <div class="content-left">
+                <div class="content-left-wrapper">                     
+                    <header>
+                        <div class="toggle-holder">
+                            <div id="toggle">
+                                <div class="menu-line"></div>
+                            </div>
+                        </div>  
 
-<nav class="navbar navbar-expand-lg  main-nav " id="navbar">
-	<div class="container">
-	  <a class="navbar-brand" href="index.html">
-		<img src="images/black-logo.png" alt="" class="img-fluid" style="width: 75px; padding: 5px">
-	  </a>
+                        <div class="top-pagination">
+                            <div class="current-num">
+                                <span>01</span>                                    
+                            </div>
+                            <div class="pagination-div"></div>
+                            <div class="total-pages-num"></div>
+                        </div>
 
-	  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="ti-align-justify"></span>
-	  </button>
-  
-		  <div class="collapse navbar-collapse" id="navbarsExample09">
-			<ul class="navbar-nav ml-auto">
-			  <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-			  <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
-			  <li class="nav-item active"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-			  <li class="nav-item active"><a class="nav-link" href="blog.html">DevBlog</a></li>
-			  <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
-			  <!-- <li class="nav-item dropdown active">
-					<a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
-					<ul class="dropdown-menu" aria-labelledby="dropdown02">
-						<li><a class="dropdown-item" href="portfolio-1.html">Portfolio Masonary</a></li>
-						<li><a class="dropdown-item" href="portfolio-2.html">Portfolio lightbox</a></li>
-						<li><a class="dropdown-item" href="portfolio-3.html">Portfolio 2 column</a></li>
-						<li><a class="dropdown-item" href="portfolio-single.html">Portfolio Details</a></li>
-					</ul>
-			  </li> -->
-			   <!-- <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
-					<ul class="dropdown-menu" aria-labelledby="dropdown05">
-						<li><a class="dropdown-item" href="blog-grid.html">Blog Grid</a></li>
-						<li><a class="dropdown-item" href="blog-sidebar.html">Blog with Sidebar</a></li>
+                        <div class="menu-holder">
+                            <div class="menu-wrapper relative">                                 
+                                <nav id="header-main-menu">
+                                    <ul class="main-menu sm sm-clean">
+                                        <li><a href="#home">Home</a></li>
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#portfolio">Portfolio</a></li>                                  
+                                        <li><a href="#resume">Resume</a></li>                                  
+                                        <!-- <li><a href="#skills">Skills</a></li>                                   -->
+                                        <li><a href="#contact">Contact</a></li>                                  
+                                    </ul>
+                                </nav>                            
+                            </div>
+                        </div>               
 
-						<li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
-					</ul>
-			  </li> -->
-			   
-			</ul>
-		</div>
-	</div>
-</nav>
+                        <div class="my-info-wrapper">
+                            <img class="my-info-signature" src="images/light-purple-logo.png"/>
+                            <div class="my-info">
+                                <p class="my-info-title">NAME</p>
+                                <p class="my-info-content">Hazel Wong</p>
+                            </div>
 
-<!-- Header Close --> 
+                            <div class="my-info">
+                                <p class="my-info-title">ROLE</p>
+                                <p class="my-info-content">Game Designer</p>
+                                <p class="my-info-content">Game Developer</p>
+                                <p class="my-info-content">Researcher</p>
+                            </div>
+
+                            <div class="my-info">
+                                <p class="my-info-title">EMAIL</p>
+                                <p class="my-info-content">hazwong@umich.edu</p>
+                            </div>
+
+                            <!-- <div class="my-info">
+                                <p class="my-info-title">PHONE</p>
+                                <p class="my-info-content">(+987) 987 654 321</p>
+                            </div> -->
+                        </div>   
+
+                        <div class="big-num">                              
+                            <div class="current-big-num">01</div>
+                            <!-- <div class="icon-scroll"></div>   -->
+                        </div>
+                    </header>
+                </div>        
+
+            </div>
+
+            <div class="content-right">  
+                <div class="content-right-wrapper">
+                    
+                    <!-- Home Section -->  
+                    <div id="home" class="section full-width-section">
+                        <div class="section-wrapper block">
+                            <div class="home-center-part">
+                                <img class="logo" src="images/dark-purple-logo.png"/>
+                                <!-- <p class="site-des">Hello. My name is</p> -->
+                                <h1 class="entry-title">Hazel Wong</h1>                                
+                                <!-- <p class="site-info">
+                                    A full stack all around designer that may or may not include a guide for specific creative potential methods who framing and evaluating moves. 
+                                </p> -->
+
+                                <div class="social-links">
+                                    <a href="mailto:hazwong@umich.edu">EMAIL</a>
+                                    <a href="https://www.linkedin.com/in/hazelltwong/">LINKEDIN</a>
+                                    <a href="https://twitter.com/HardBoiledDev">TWITTER</a>
+                                </div>
+
+                            </div>                            
+                            <!-- <div class="home-right-part">                                
+                            </div>                             -->
+                        </div>
+                    </div>
+
+                    <!-- Service Section -->  
+                    <div id="about" class="section">                        
+                        <div class="section-wrapper block">
+                            <div class="content-1300">
+                                <div class="row">
+                                    <div class="one-half width-55">
+                                        <div class="services-wrapper">
+                                            <div class="service-holder">
+                                                <img src="images/service1.png" alt="" />
+                                                <h4 class="service-title">Co-founder</h4>
+                                                <div class="service-text">
+                                                    I founded HardBoiled Studios with two friends to develop our debut game Yolked.
+                                                </div>                                        
+                                            </div>                               
+
+                                            <div class="service-holder m-right-0">
+                                                <img src="images/service2.png" alt="" />
+                                                <h4 class="service-title">Game Designer</h4>
+                                                <div class="service-text">
+                                                    In my free time, I spend time designing/developing levels and game mechanics for Yolked.
+                                                </div>                                        
+                                            </div>                                
+
+                                            <div class="service-holder m-bottom-0">
+                                                <img src="images/service3.png" alt="" />
+                                                <h4 class="service-title">Researcher</h4>
+                                                <div class="service-text">
+                                                    I conducted research on machine learning prediction biases in my senior year of university.
+                                                </div>                                        
+                                            </div>
+
+                                            <div class="service-holder m-right-0 m-bottom-0">
+                                                <img src="images/service4.png" alt="" />
+                                                <h4 class="service-title">Graduate</h4>
+                                                <div class="service-text">
+                                                    I majored in Computer Science and minored in Chemistry at the University of Michigan!
+                                                </div>                                        
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="one-half width-40 last">                                
+                                        <h2 class="entry-title section-title">About Me</h2>
+                                        <p class="section-info">
+                                            Hi! I am a fresh graduate of the University of Michigan and one of the Co-founders of HardBoiled Studios, a student-led game studio that is currently developing their debut game, Yolked.
+                                        </p>
+                                        <p>
+                                            I am passionate about machine learning. In my senior year, I conducted research on machine learning prediction biases with Serena Xiong, a fellow undergraduate researcher, and Dr. Sindhu Kutty, a professor of Machine Learning. Our research was presented at the virtual Grace Hopper Conference and won third place in the ACM Student Research Competition.
+                                        </p>
+                                        <p>
+                                            On the side, I also love to develop games. After taking a video game development course in university, two students and I took our final project, Yolked, and decided to start HardBoiled Studios and bring it all the way to the finish line. We have partnered with a publisher, Hitcents, to turn Yolked into a published intellectual property by the end of 2021.
+                                        </p>
+
+                                        <div class="button-group-wrapper">
+                                            <a href="pdf/Hazel_Wong_CV.pdf" target="_blank" class="button">Download CV</a> 
+                                            <!-- <a href="#portfolio" class="button">Check My Portfolio</a>                                                                    -->
+                                        </div>
+                                    </div>                                                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Section -->  
+                    <div id="portfolio" class="section">                        
+                        <div class="section-wrapper block">
+                            <div class="content-1300">
+                                <div id="portfolio-wrapper" class="relative">
+                                    <div class="category-filter">
+                                        <div class="category-filter-icon"></div>                       
+                                    </div>
+                                    <div class="category-filter-list button-group filters-button-group">
+                                        <div class="button is-checked" data-filter="*">All</div>
+                                        <div class="button" data-filter=".research">Research</div>
+                                        <div class="button" data-filter=".game">Games</div>                                 
+                                    </div>
+                                    <div class="portfolio-load-content-holder"></div>
+                                    <div class="grid" id="portfolio-grid">                                                            
+                                        <div class="grid-sizer"></div>
+
+                                        <div id="p-item-1" class="grid-item element-item p-one-third game">
+                                            <a class="item-link" target="_blank" href="https://hardboiledstudios.itch.io/yolked" data-id="1">
+                                                <img src="images/yolked.gif" alt="" />
+                                                <div class="portfolio-text-holder">
+                                                    <div class="portfolio-text-wrapper">
+                                                        <p class="portfolio-text">Yolked</p>
+                                                        <p class="portfolio-cat">Mac/PC Video Game</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div id="p-item-2" class="grid-item element-item p-one-third research">
+                                            <a class="item-link" target="_blank" href="https://vghc-anitab.ipostersessions.com/default.aspx?s=8F-67-EC-07-7E-AF-43-B3-A7-C8-18-7B-EF-85-35-AC" data-id="2">
+                                                <img src="images/ML.png" alt="" />
+                                                <div class="portfolio-text-holder">
+                                                    <div class="portfolio-text-wrapper">
+                                                        <p class="portfolio-text">Fairness in COMPAS</p>
+                                                        <p class="portfolio-cat">ML Research</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div id="p-item-3" class="grid-item element-item p-one-third game">
+                                            <a class="item-link" target="_blank" href="https://hardboiledstudios.itch.io/back-2-back" data-id="3">
+                                                <img src="images/back2back.gif" alt="" />
+                                                <div class="portfolio-text-holder">
+                                                    <div class="portfolio-text-wrapper">
+                                                        <p class="portfolio-text">Back 2 Back</p>
+                                                        <p class="portfolio-cat">Web Game</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="grid-item element-item p-one-third game">
+                                            <a class="item-link" target="_blank" href="http://www-personal.umich.edu/~hazwong/Color_Array/">
+                                                <img src="images/color-array.gif" alt="" />
+                                                <div class="portfolio-text-holder">
+                                                    <div class="portfolio-text-wrapper">
+                                                        <p class="portfolio-text">Color Array</p>
+                                                        <p class="portfolio-cat">Web Game</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="grid-item element-item p-one-third game">
+                                            <a class="item-link" target="_blank" href="http://www-personal.umich.edu/~hazwong/Legend_Of_Zelda/">
+                                                <img src="images/legend-of-zelda.gif" alt="" />
+                                                <div class="portfolio-text-holder">
+                                                    <div class="portfolio-text-wrapper">
+                                                        <p class="portfolio-text">Legend of Zelda</p>
+                                                        <p class="portfolio-text">(Unity Remastered)</p>
+                                                        <p class="portfolio-cat">Web Game</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="grid-item element-item p-one-third research">
+                                            <a class="item-link" target="_blank" href="https://www.sciencedirect.com/science/article/abs/pii/S2452223618300622?via%3Dihub">
+                                                <img src="images/chem.png" alt="" />
+                                                <div class="portfolio-text-holder">
+                                                    <div class="portfolio-text-wrapper">
+                                                        <p class="portfolio-text">Reaction</p>
+                                                        <p class="portfolio-text">Miniaturization</p>
+                                                        <p class="portfolio-cat">Published Chemistry Reearch</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>                
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resume Section -->  
+                    <div id="resume" class="section">                        
+                        <div class="section-wrapper block">
+                            <div class="content-1300">  
+                                <div class="row">
+                                    <div class="one-half width-55">
+                                        <h2 class="entry-title section-title">Experience</h2>
+
+                                        <ul class="timeline-holder">                                        
+                                            <li class="timeline-event">
+                                                <span class="timeline-circle"></span>
+                                                <div class="timeline-event-content">
+                                                    <b class="pink">Co-founder and Game Designer of HardBoiled Studios </b><br>
+                                                    <span class="pink">March 2020 - Present</span> 
+                                                    <br><br>
+                                                    <ul>
+                                                        <li>• Founded HardBoiled Studios as a team of three developers to work on our debut game "Yolked"</li>
+                                                        <li>• Conceptualized, designed and implemented levels using Unity and C#</li>
+                                                        <li>• Appointed as Acting COO to keep track of tasks, coordinate with stakeholders, schedule chair meetings, and ensure deadlines are met</li>
+                                                        <li>• Partnered with a publisher to turn “Yolked” into a published intellectual property</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="timeline-event-date">2020</div>
+                                            </li>
+
+                                            <li class="timeline-event">
+                                                <span class="timeline-circle"></span>
+                                                <div class="timeline-event-content">
+                                                    <b class="pink">Software Engineering Intern at Animoca Brands</b><br>
+                                                    <span class="pink">June 2020 - August 2020</span> 
+                                                    <br><br>
+                                                    <ul>
+                                                        <li>• Developed websites for video games using HTML, CSS and React Native</li>
+                                                        <li>• Transformed XD files made by graphic designers into webpages</li>
+                                                        <li>• Created responsive webpages for mobile, tablet and desktop</li>
+                                                        <li>• Integrated a part of an API flow between a website and a game client</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="timeline-event-date"></div>
+                                            </li>
+
+                                            <li class="timeline-event">
+                                                <span class="timeline-circle"></span>
+                                                <div class="timeline-event-content">   
+                                                    <b class="pink">Undergraduate Student Researcher at UMich</b><br>
+                                                    <span class="pink">December 2019 - October 2020</span>
+                                                    <br><br>
+                                                    <ul>
+                                                        <li>• Conducted research on machine learning prediction biases of recidivism prediction instruments with Dr. Sindhu Kutty, a professor of Machine Learning</li>
+                                                        <li>• Presented our research at the virtual Grace Hopper Conference on an iPoster in Oct 2020</li>
+                                                        <li>• Won 3rd place in the ACM Student Research Competition at the Grace Hopper Conference</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="timeline-event-date">2019</div>
+                                            </li>
+
+                                            <li class="timeline-event">
+                                                <span class="timeline-circle"></span>
+                                                <div class="timeline-event-content">
+                                                    <b class="pink">Software Engineering Intern at Datatech Global HK</b><br>
+                                                    <span class="pink">June 2019 - August 2019</span>
+                                                    <br><br>
+                                                    <ul>
+                                                        <li>• Created simple animations on a responsive website using HTML, CSS and jQuery to enhance an exhibition showcase experience</li>
+                                                        <li>• Designed and built a functional content management system with Javascript, React and MySQL for a mobile application with functions such as adding, deleting, editing, and keyword searching</li>
+                                                        <li>• Devised a new enrollment system flow for an English learning centre, including the specifications of the backend and frontend systems in a functional requirement document</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="timeline-event-date"></div>
+                                            </li>                                        
+
+                                            <li class="timeline-event">
+                                                <span class="timeline-circle"></span>
+                                                <div class="timeline-event-content">
+                                                    <b class="pink">Undergraduate Student Researcher at UMich</b><br>
+                                                    <span class="pink">August 2018 - December 2019</span>
+                                                    <br><br>
+                                                    <ul>
+                                                        <li>• Utilized quantum mechanical computational methods to predict substrate ligand binding in biological systems and calculate energy differences of different molecular structures</li>
+                                                        <li>• Engineered shell scripts to read in RNA molecules, break molecules into fragments and compute the chemical properties of each fragment</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="timeline-event-date">2018</div>
+                                            </li>                                                 
+                                        </ul>
+                                    </div>
+
+                                    <div class="one-half width-40 last">
+                                        <h2 class="entry-title section-title">Education</h2>
+                                        <p class="section-info pink">
+                                            University of Michigan
+                                        </p>
+                                        <ul>
+                                            <li>• Bachelors of Science in Computer Science</li>
+                                            <li>• Conceptualized, designed and implemented levels using Unity and C#</li>
+                                            <li>• Relevant Coursework: Data Structures and Algorithms, Web Systems, Game Design and Development, User Interface Development, Introduction to Machine Learning, Software Engineering</li>
+                                        </ul>
+                                        <br><br>
+                                        <p class="section-info pink">
+                                            Canadian International School of Hong Kong
+                                        </p>
+                                        <ul>
+                                            <li>• Higher Level Biology, Chemistry, Math</li>
+                                            <li>• Standard Level Chinese, Language and Literature, Economics</li>
+                                        </ul>                                    
+
+                                        <!-- <img class="my-signature" src="images/signature2.png" alt="">                                         -->
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills Section -->  
+                    <!-- <div id="skills" class="section">                        
+                        <div class="section-wrapper block">
+                            <div class="content-1300"> 
+                                <div class="row m-bottom-60">
+                                    <h2 class="entry-title section-title">Skills</h2>
+
+                                    <div class="skill-circle-holder">
+                                        <div class="skill-circle">
+                                            <div class="skill-circle-wrapper relative" data-value="0.82" data-color="#f37b83" data-empty-color="#554247">
+                                                <span class="skill-circle-num"></span>                                            
+                                            </div>
+                                            <p class="skill-circle-text">Photoshop</p>
+                                        </div>
+
+                                        <div class="skill-circle">
+                                            <div class="skill-circle-wrapper relative" data-value="0.6" data-color="#f37b83" data-empty-color="#554247">
+                                                <span class="skill-circle-num"></span>                                            
+                                            </div>
+                                            <p class="skill-circle-text">Marketing</p>
+                                        </div>                                
+
+                                        <div class="skill-circle">
+                                            <div class="skill-circle-wrapper relative" data-value="0.75" data-color="#f37b83" data-empty-color="#554247">
+                                                <span class="skill-circle-num"></span>                                            
+                                            </div>
+                                            <p class="skill-circle-text">PhP</p>
+                                        </div>
+
+                                        <div class="skill-circle">
+                                            <div class="skill-circle-wrapper relative" data-value="0.31" data-color="#f37b83" data-empty-color="#554247">
+                                                <span class="skill-circle-num"></span>                                            
+                                            </div>
+                                            <p class="skill-circle-text">3D</p>
+                                        </div>
+                                    </div>                                    
+                                </div>
 
 
-<!-- Navigation ENd -->
+                                <div class="row">
+                                    <div class="one-half">                                    
+                                        <div class="skills-holder">
+                                            <div class="skill-holder">                                        
+                                                <div class="skill-text">                                            
+                                                    <div class="skill">
+                                                        <div class="skill-fill" data-fill="75%"></div>                                                    
+                                                    </div>              
+                                                    <span>Creativity</span>
+                                                </div>                
+                                                <div class="skill-percent">75%</div>
+                                            </div>
 
-<!-- Banner Start -->
-<section class="section banner" style="margin-top: auto; margin-bottom: auto">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-10">
-				 <h2 class="cd-headline clip is-full-width mb-4 ">
-				 	I am <br>
-                    <span class="cd-words-wrapper text-color">
-                        <b class="is-visible">Hazel Wong. </b>
-                        <b>A Game Developer.</b>
-						<b>A Game Designer.</b>
-                    </span>
-                </h2>
-                <!-- <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain <br>was born and I will give you a complete account of the system</p> -->
-			</div>
-		</div>
-	</div>
-</section>
+                                            <div class="skill-holder">                                        
+                                                <div class="skill-text">                                            
+                                                    <div class="skill">
+                                                        <div class="skill-fill" data-fill="48%"></div>                                                   
+                                                    </div>              
+                                                    <span>Cooking</span>
+                                                </div>                                            
+                                                <div class="skill-percent">48%</div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-<!-- Banner End -->
+                                    <div class="one-half last">
+                                        <div class="skills-holder sec-skills-holder">
+                                            <div class="skill-holder">                                        
+                                                <div class="skill-text">                                            
+                                                    <div class="skill">
+                                                        <div class="skill-fill" data-fill="90%"></div>                                                   
+                                                    </div>                                                
+                                                    <span>PhP</span>
+                                                </div>                
+                                                <div class="skill-percent">90%</div>
+                                            </div>
 
-<!-- POrtfolio start -->
-<!-- <section class="portfolio ">
-	<div class="container">
-		<div class="row mb-5">
-	      	<div class="col-10">
-		        <div class="btn-group btn-group-toggle " data-toggle="buttons">
-		          <label class="btn active ">
-		            <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
-		          </label>
-		          <label class="btn">
-		            <input type="radio" name="shuffle-filter" value="design" />UI/UX Design
-		          </label>
-		          <label class="btn">
-		            <input type="radio" name="shuffle-filter" value="branding" />branding
-		          </label>
-		          <label class="btn">
-		            <input type="radio" name="shuffle-filter" value="illustration" />Web Development
-		          </label>
-		           <label class="btn">
-		            <input type="radio" name="shuffle-filter" value="photo" />Photography
-		          </label>
-		        </div>
-	      	</div>
-    	</div>	
+                                            <div class="skill-holder">                                        
+                                                <div class="skill-text">                                            
+                                                    <div class="skill">
+                                                        <div class="skill-fill" data-fill="62%"></div>                                                   
+                                                    </div>              
+                                                    <span>Marketing</span>
+                                                </div>                
+                                                <div class="skill-percent">62%</div>
+                                            </div>                                    
+                                        </div>
+                                    </div>                                    
+                                </div>                                
+                            </div>                            
+                        </div>
+                    </div>           -->
+                    
+                    <!-- Contact Section -->  
+                    <div id="contact" class="section p-bottom-0">                        
+                        <div class="section-wrapper block">
+                            <div class="content-1300">   
+                                <div class="row">
+                                    <h2 class="entry-title section-title">Get in touch</h2>
+                                    <div class="flex">
+                                        <div class="width-33">
+                                            <div>
+                                                <img class="contact-email-icon" src="images/email.png" alt=""/>
+                                                <h5 class="contact-text">Send an Email</h5>
+                                                <a class="contact-link" href="mailto:hazwong@umich.edu" target="_blank"><p class="contact-info">hazwong@umich.edu</p></a>
+                                            </div>
+                                        </div>
+                                        <div class="width-33">
+                                            <div>
+                                                <img class="contact-linkedin-icon" src="images/linkedin.png" alt="" />
+                                                <h4 class="contact-text">Connect on LinkedIn</h4>
+                                                <a class="contact-link" href="https://www.linkedin.com/in/hazelltwong/" target="_blank"><p class="contact-info">@hazelltwong</p></a>
+                                            </div>
+                                        </div>
+                                        <div class="width-33">
+                                            <div>
+                                                <img class="contact-twitter-icon" src="images/twitter.png" alt="" />
+                                                <h4 class="contact-text">Follow on Twitter</h4>
+                                                <a class="contact-link" href="https://twitter.com/HardBoiledDev" target="_blank"><p class="contact-info">@HardBoiledDev</p></a>
+                                            </div>
+                                        </div>
+                                    <!-- <div class="one-half width-40">
 
-		<div class="row shuffle-wrapper portfolio-gallery">
-	      <div class="col-lg-4 col-6 mb-4 shuffle-item"  data-groups="[&quot;design&quot;,&quot;illustration&quot;]">
-		      	<div class="position-relative inner-box">
-		          <div class="image position-relative ">
-	               <img src="images/portfolio/1.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
-	                <div class="overlay-box">
-	                  <div class="overlay-inner">
-	                    <a class="overlay-content" href="portfolio-single.html">
-	                      <h5 class="mb-0">Painting</h5>
-	                      <p>Design</p>
-	                    </a>
-	                  </div>
-	                </div> 
-	            </div>
-		      </div>
-	      </div>
+                                        <p class="section-info">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra tristique placerat in massa consectetur quisque nunc fames.
+                                        </p>
+                                        <p>
+                                            Magni dolores eos qui sed quia consequuntur ratione voluptatem sequi nesciunt permano Nence of the stars from which we spring muse about as a patch of light billions upon billions.                                        
+                                        </p>                                    
+                                        <p>
+                                            Energy hidden in matter a mote of lorem ipsum dust suspended in a sunbeam billions upon ratione voluptatem sequi nesciunt permano lorem ipsum.                                                                  
+                                        </p>
+                                        <p>
+                                            <b>ADDRESS:</b> Some Street 987, USA <br>
+                                            <b>EMAIL:</b> company@youremail.com <br>
+                                            <b>WEBSITE:</b> www.yourwebsite.com <br>
+                                        </p>
+                                    </div>
 
-	      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;branding&quot;]">
-	        <div class="position-relative inner-box" >
-	            <div class="image position-relative ">
-	               <img src="images/portfolio/4.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
-	                <div class="overlay-box">
-	                  <div class="overlay-inner">
-		                    <a class="overlay-content" href="portfolio-single.html">
-		                      <h5 class="mb-0">Web app</h5>
-		                      <p>Development</p>
-		                    </a>
-	                	</div> 
-		            </div>
-		        </div>
-		      </div>
-	      </div>
+                                    <div class="one-half width-55 last">
+                                        <div class="contact-form">
+                                            <p>
+                                                <input id="name" type="text" name="your-name" placeholder="Name">
+                                            </p>
+                                            <p>
+                                                <input id="contact-email" type="email" name="your-email" placeholder="Email">
+                                            </p>                                    
+                                            <p>
+                                                <input id="subject" type="text" name="your-subject" placeholder="Subject">
+                                            </p>
+                                            <p>
+                                                <textarea id="message" name="your-message" placeholder="Message"></textarea>
+                                            </p>
+                                            <p class="contact-submit-holder">
+                                                <input type="submit" value="SEND">
+                                            </p>                                
+                                        </div>  -->
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <p class="footer-text">© 2020 Hazel Wong. All Rights Reserved</p>
+                        </div>
+                    </div>
 
-	      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;illustration&quot;]">
-	        <div class="position-relative inner-box">
-	            <div class="image position-relative ">
-	               <img src="images/portfolio/3.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
-	                <div class="overlay-box">
-	                  <div class="overlay-inner">
-	                    <a class="overlay-content" href="portfolio-single.html">
-	                      <h5 class="mb-0">Business </h5>
-	                      <p>marketing</p>
-	                    </a>
-	                  </div>
-	                </div> 
-	            </div>
-	        </div>
-	      </div>
+                </div>
+            </div>            
+        </div>        
 
-	      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;,&quot;branding&quot;]">
-	        <div class="position-relative inner-box">
-	            <div class="image position-relative ">
-	               <img src="images/portfolio/5.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
-	                <div class="overlay-box">
-	                  <div class="overlay-inner">
-	                    <a class="overlay-content" href="portfolio-single.html">
-	                      <h5 class="mb-0">Portfolio</h5>
-	                      <p>Design</p>
-	                    </a>
-	                  </div>
-	                </div> 
-	            </div>
-	        </div>
-	      </div>
-
-	      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;illustration&quot;]">
-	        <div class="position-relative inner-box">
-	            <div class="image position-relative ">
-	               <img src="images/portfolio/6.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
-	                <div class="overlay-box">
-	                  <div class="overlay-inner">
-	                    <a class="overlay-content" href="portfolio-single.html">
-	                       <h5 class="mb-0 ">Modern web</h5>
-	                      	<p>Seo</p>
-	                    </a>
-	                  </div>
-	                </div> 
-	            </div>
-	        </div>
-	      </div>
-
-	      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;,&quot;photo&quot;]">
-	        <div class="position-relative inner-box">
-	            <div class="image position-relative ">
-	               <img src="images/portfolio/7.jpg" alt="portfolio-image" class="img-fluid w-100 d-block">
-	                <div class="overlay-box">
-	                  <div class="overlay-inner">
-	                    <a class="overlay-content" href="portfolio-single.html">
-	                       <h5 class="mb-0">Agency web</h5>
-	                      	<p>Design</p>
-	                    </a>
-	                  </div>
-	                </div> 
-	            </div>
-	        </div>
-	      </div>
-	    </div>
-	</div>
-</section> -->
-<!-- Portfolio End -->
-
-<!-- Service start -->
-<!-- <section class="section service-home border-top">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6">
-				<h2 class="mb-2 ">Core Services.</h2>
-				<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, totam ipsa quia hic odit a sit laboriosam voluptatem in, blanditiis.</p>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-lg-4">
-				<div class="service-item mb-5" data-aos="fade-left" >
-					<i class="ti-layout"></i>
-					<h4 class="my-3">Web Development</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.</p>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="service-item mb-5" data-aos="fade-left"  data-aos-delay="450">
-					<i class="ti-announcement"></i>
-					<h4 class="my-3">Digital Marketing</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.</p>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="service-item mb-5 mb-lg-0" data-aos="fade-left"  data-aos-delay="750">
-					<i class="ti-layers"></i>
-					<h4 class="my-3">Graphics Design</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.</p>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="service-item" data-aos="fade-left"  data-aos-delay="750">
-					<i class="ti-anchor"></i>
-					<h4 class="my-3">Branding Design</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.</p>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="service-item mb-5" data-aos="fade-left"  data-aos-delay="950">
-					<i class="ti-video-camera"></i>
-					<h4 class="my-3">Video Marketing</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.</p>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="service-item mb-5 mb-lg-0" data-aos="fade-left"  data-aos-delay="1050">
-					<i class="ti-android"></i>
-					<h4 class="my-3">App Design</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
-<!-- service end -->
-
-<!-- Footer start -->
-<section class="footer" style="margin-bottom: 0; margin-top: auto; margin-top: 0;">
-	<div class="container">
-		<div class="row ">
-			<div class="col-lg-6">
-				<p class="mb-0">Copyrights © 2019. Designed & Developed by <a href="themefisher.com" class="text-white">Themefisher</a></p>
-			</div>
-			<div class="col-lg-6">
-				<div class="widget footer-widget text-lg-right mt-5 mt-lg-0">
-					<ul class="list-inline mb-0">
-						<li class="list-inline-item"><a href="https://www.facebook.com/themefisher" target="_blank"><i class="ti-facebook mr-3"></i></a>
-						</li>
-						<li class="list-inline-item"><a href="https://twitter.com/themefisher" target="_blank"><i class="ti-twitter mr-3"></i></a>
-						</li>
-						<li class="list-inline-item"><a href="https://github.com/themefisher/" target="_blank"><i class="ti-github mr-3"></i></a></li>
-						<li class="list-inline-item"><a href="https://www.pinterest.com/themefisher/" target="_blank"><i class="ti-pinterest mr-3"></i></a></li>
-						<li class="list-inline-item"><a href="https://dribbble.com/themefisher/" target="_blank"><i class="ti-dribbble mr-3"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Footer End -->
-
-<!-- jQuery -->
-<script src="plugins/jQuery/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="plugins/bootstrap/bootstrap.min.js"></script>
-<script src="plugins/aos/aos.js"></script>
-<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
-<script src="plugins/shuffle/shuffle.min.js"></script>
-<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="plugins/animated-text/animated-text.js"></script>
-<script src="plugins/counto/apear.js"></script>
-<script src="plugins/counto/counTo.js"></script>
-
- <!-- Google Map -->
-<script src="plugins/google-map/map.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script> 
-<!-- Main Script -->
-<script src="js/script.js"></script>
-
+        <!--Load JavaScript-->
+        <script src="js/jquery.js"></script>			                                                               
+        <script src='js/imagesloaded.pkgd.js'></script>                
+        <script src='js/jquery.prettyPhoto.js'></script>                
+        <script src='js/isotope.pkgd.js'></script>                
+        <script src='js/jquery.smartmenus.min.js'></script>                           
+        <script src='js/owl.carousel.min.js'></script>                                                            
+        <script src='js/circle-progress.min.js'></script>                                                            
+        <script src='js/main.js'></script>
+    </body>
 </html>
