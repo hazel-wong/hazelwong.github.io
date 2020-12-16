@@ -1670,6 +1670,10 @@ p.contact-submit-holder {
         margin-bottom: 30px;
     }
 
+    .home-center-part {
+        margin-right: 0;
+    }
+
 }
 
 @media screen and (max-height: 880px) {    
