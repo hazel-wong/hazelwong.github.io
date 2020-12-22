@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <title>Hazel Wong</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Template by CocoBasic" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
+        <meta name="author" content="CocoBasic" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="shortcut icon" href="images/favicon.ico" />      
+        <link href='https://fonts.googleapis.com/css?family=Poppins:400,700,800' rel='stylesheet' type='text/css'>	             
+        <link rel="stylesheet" type="text/css"  href='style.css' />
+
+        <!--[if lt IE 9]>
+                <script src="js/html5.js"></script>            
+                <script src="js/respond.min.js"></script>                   
+        <![endif]-->
+    </head>
+
+    <body class="single-portfolio">
+
+        <!-- Preloader Gif -->
+        <div class="doc-loader"></div>
+
+
+        <div id="content" class="site-content">
+
+            <div class="content-left">
+                <div class="content-left-wrapper">                     
+                    <header>
+                        <div class="toggle-holder">
+                            <div id="toggle">
+                                <div class="menu-line"></div>
+                            </div>
+                        </div>  
+
+                        <div class="top-pagination">
+                            <div class="current-num">
+                                <span>01</span>                                    
+                            </div>
+                            <div class="pagination-div"></div>
+                            <div style="color: white">01</div>
+                        </div>
+
+                        <div class="menu-holder">
+                            <div class="menu-wrapper relative">                                 
+                                <nav id="header-main-menu">
+                                    <ul class="main-menu sm sm-clean">
+                                        <li><a href="index.html#home">Home</a></li>
+                                        <li><a href="index.html#about">About</a></li>
+                                        <li><a href="index.html#portfolio">Portfolio</a></li>                                  
+                                        <li><a href="index.html#resume">Resume</a></li>                                  
+                                        <li><a href="index.html#devblog">Devblog</a></li>                                  
+                                        <li><a href="index.html#contact">Contact</a></li>                                  
+                                    </ul>
+                                </nav>                            
+                            </div>
+                        </div>               
+
+                        <div class="my-info-wrapper">
+                            <img class="my-info-signature" src="images/light-purple-logo.png"/>
+                            <div class="my-info">
+                                <p class="my-info-title">NAME</p>
+                                <p class="my-info-content">Hazel Wong</p>
+                            </div>
+
+                            <div class="my-info">
+                                <p class="my-info-title">ROLE</p>
+                                <p class="my-info-content">Game Designer</p>
+                                <p class="my-info-content">Game Developer</p>
+                                <p class="my-info-content">Researcher</p>
+                            </div>
+
+                            <div class="my-info">
+                                <p class="my-info-title">EMAIL</p>
+                                <p class="my-info-content">hazwong@umich.edu</p>
+                            </div>
+
+                            <!-- <div class="my-info">
+                                <p class="my-info-title">PHONE</p>
+                                <p class="my-info-content">(+987) 987 654 321</p>
+                            </div> -->
+                        </div>   
+
+                        <div class="big-num">                              
+                            <div class="current-big-num">01</div>
+                            <!-- <div class="icon-scroll"></div>   -->
+                        </div>
+                    </header>
+                </div>        
+
+            </div>
+
+            <div class="content-right">  
+                <div class="content-right-wrapper">
+                    <div class="section-devblog">
+                        <div class="section-wrapper block">
+                            <div class="portfolio-item-wrapper center-relative">
+                                <div class="portfolio-content">
+                                    <div class="row">
+                                        <div>
+
+                                            <h2 class="entry-title section-title devblog-title">Related Academic Research</h2>
+                                            <p>14 SEPT 2020</p>
+
+                                            <p>This week, I found 20 academic papers that I thought were relevant to Project Randomizer. Within the set of relevant papers, I picked three that I believed would help me most with my research and summarized them.</p>
+                                            <p class="subheading">Relevant Articles</p>
+                                            <a href="http://musicweb.ucsd.edu/~sdubnov/Mu270d/AIIDE12/01/AIIDE12-040.pdf">1. The Gold Standard: Automatically Generating Puzzle Game Levels</a><br/>
+                                            <p>This paper introduces an automatic level generation system called Goldspinner for a non-scrolling puzzle platform game, KGoldrunner. Goldspinner is able to create interesting solvable levels that are both statically good and dynamically good by running (1) a genetic algorithm to generate and evaluate candidate levels and (2) simulations of these good candidate levels to test its dynamic aspects.</p>
+                                            <p>To create a new level, the genetic algorithm starts with an initial base level, then overlays features, such as walls, on it. Once a level has been created, an evaluation function is used to determine whether a hero can travel through the level. A level is separated into different nodes. Each time the hero can travel between a pair of nodes, an edge is added to a graph called a “group graph”, which shows the possible movements of the hero in the level. If a level passes the static tests, Goldspinner then performs simulations to determine whether a level is actually solvable. A plan to complete the level is generated and an AI attempts to follow the plan. If the AI player is able to reach the exit, then the level is considered solvable and also encompasses desirable static and dynamic properties.</p>
+                                            <p>Although Goldspinner is applied solely to KGoldrunner, it is possible that the technique can be used for other puzzle games.</p>
+
+                                            <a href="http://ianparberry.com/techreports/LARC-2011-01.pdf">2. Procedural Generation of Sokoban Levels</a><br/>
+                                            <p>In this paper, an algorithm is used to procedurally generate levels for the Japanese puzzle game, Sokoban. Sokoban is a simple puzzle game, where the player has to push boxes onto specific squares specified in the level. However, the player is restricted by the placement of walls, different boxes, as well as its ability to only push one box at a time. The method used to procedurally generate levels for Sokoban is by working backwards. The algorithm itself consists of three steps: (1) Build an empty room; (2) Place goals in the room; (3) Find the state farthest from the goal state.</p>
+                                            <p>First, an empty room is built by randomly selecting the height and width of the level, then walls and floors are added, while making sure that none of the rules are violated. Next, the goal is placed using brute force. Then, the algorithm finds the farthest state from the goal state and returns the set of levels that are furthest from the goal state. Finally, it filters these levels to find the best candidate levels that are not too easy or too similar to previous levels.</p>
+                                            
+                                            <a href="https://www.cs.umn.edu/sites/cs.umn.edu/files/tech_reports/16-005.pdf">3. Generating Sokoban Puzzle Game Levels with Monte Carlo Tree Search</a><br/>
+                                            <p>This is another paper that attempts to procedurally generate levels for the Japanese puzzle game, Sokoban. The approach it uses is a Monte Carlo Tree Search (MCTS) based approach that guarantees solvability, efficiency and speed by simulating gameplay. The algorithm is not require any human designed input and is able to generate levels of various sizes. </p>
+                                            <p>MCTS is a search algorithm that consists of four distinct phases: selection, expansion, rollout and backpropagation. The reason why MCTS is used is because of its anytime property and its ability to succeed in problem that have large branching factors. The approach used in the article separates the puzzle program into two: puzzle initialization (where to place the starting locations of boxes, empty tiles and obstacle tiles) and puzzle shuffling (where to place goal locations). MCTS is then used to optimize the solutions. An evaluation function is used to filter out levels that are too easy or uninteresting, leaving a set of challenging and solvable puzzles. </p>
+                                            
+                                            <a href="https://ieeexplore.ieee.org/abstract/document/5742785">4. Search-Based Procedural Generation of Maze-Like Levels</a><br/>
+                                            <a href="https://dl.acm.org/doi/abs/10.1145/2538528.2538538">5. Procedural Generation of Narrative Puzzles in Adventure Games: The Puzzle-Dice System</a><br/>
+                                            <a href="https://ieeexplore.ieee.org/abstract/document/7332726/">6. Procedural level generation with answer set programming for general Video Game playing</a><br/>
+                                            <a href="https://link.springer.com/book/10.1007%2F978-3-319-42716-4">7. Procedural Content Generation in Games</a><br/>
+                                            <a href="https://ieeexplore.ieee.org/abstract/document/5940995/">8. A Generic Approach to Challenge Modeling for the Procedural Creation of Video Game Levels</a><br/>
+                                            <a href="https://ieeexplore.ieee.org/abstract/document/6661386/">9. Procedural Generation of Dungeons</a><br/>
+                                            <a href="https://dl.acm.org/doi/abs/10.1145/2422956.2422957">10. Procedural content generation for games: A survey</a><br/>
+                                            <a href="https://dl.acm.org/doi/abs/10.1145/2282338.2282370">11. A case study of expressively constrainable level design automation tools for a puzzle game</a><br/>
+                                            <a href="https://dl.acm.org/doi/abs/10.1145/2598394.2598489">12. A multi-population genetic algorithm for procedural generation of levels for platform games</a><br/>
+                                            <a href="https://dl.acm.org/doi/abs/10.1145/2427116.2427117">13. Patterns and procedural content generation: revisiting Mario in world 1 level 1</a><br/>
+                                            <a href="https://ieeexplore.ieee.org/abstract/document/8080411">14. Mixed-initiative procedural generation of dungeons using game design patterns</a><br/>
+                                            <a href="https://www.aaai.org/Papers/AIIDE/2006/AIIDE06-022.pdf">15. Procedural Level Design for Platform Games</a><br/>
+
+                                            <br/>
+                                            <p class="subheading">Less Relevant Articles</p>
+                                            <a href="https://www.semanticscholar.org/paper/A-Logical-Approach-to-Building-Dungeons%3A-Answer-Set-Smith-Bryson/f69bf76b77da89bfd7135b9c60d2b9b10fc1ac20?p2df">16. A Logical Approach to Building Dungeons</a><br/>
+                                            <a href="https://dl.acm.org/doi/abs/10.1145/1227310.1227352">17. A games first approach to teaching introductory programming</a><br/>
+                                            <a href="https://books.google.com.hk/books?hl=en&lr=&id=-ZcnDwAAQBAJ&oi=fnd&pg=PT17&dq=procedural+generation+puzzle+game+&ots=3vLBzu5HTQ&sig=kxI_hqhqzOlFohjqnJtqAeb0Ga4&redir_esc=y#v=onepage&q=procedural%20generation%20puzzle%20game&f=false">18. Procedural Generation in Game Design</a><br/>
+                                            <a href="https://ieeexplore.ieee.org/abstract/document/6633640">19. An approach to level design using procedural content generation and difficulty curves</a><br/>
+                                            <a href="https://dl.acm.org/doi/abs/10.1145/1814256.1814258">20. Integrating procedural generation and manual editing of virtual worlds</a><br/>
+
+                                            <br/>
+                                            <p class="subheading">Sources</p>
+                                            <a href="https://games.kde.org/game.php?game=kgoldrunner"><p class="devblog-sources">https://games.kde.org/game.php?game=kgoldrunner</p></a>
+                                            
+                                            <p>
+                                                <a class="button" href="index.html#devblog">Return to Devblog</a>                                         
+                                            </p>
+                                        </div>
+                                    </div>                                    
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>        
+
+        <!--Load JavaScript-->
+        <script src="js/jquery.js"></script>			                                                               
+        <script src='js/imagesloaded.pkgd.js'></script>                
+        <script src='js/jquery.prettyPhoto.js'></script>                
+        <script src='js/isotope.pkgd.js'></script>                
+        <script src='js/jquery.smartmenus.min.js'></script>                           
+        <script src='js/owl.carousel.min.js'></script>                                                            
+        <script src='js/circle-progress.min.js'></script>                                                            
+        <script src='js/main.js'></script>
+    </body>
+</html>

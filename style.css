@@ -15,7 +15,8 @@
 8. Resume Section CSS
 9. Skills Section CSS
 10. Contact Section CSS
-11. Responsive CSS
+11. Devblog Section CSS
+12. Responsive CSS
 
 -------------------------------------------------------------------*/
 
@@ -54,18 +55,18 @@ body {
 
 body a {
     text-decoration: none;
-    color: #000000;    
+    color: #fff;    
     transition: color .3s linear;
 }
 
 body a:hover {
-    color: #acacac;
+    text-decoration: underline;
 }
 
 body img {
     max-width: 100%;
     max-height: 100%;
-    width: auto;
+    width: 500px;
     height: auto;
     display: block;
 }
@@ -125,8 +126,20 @@ a.button:hover {
     background-color: #f37b83;
 }
 
+.blog-link {
+    color: white;
+}
+
+.blog-link:hover {
+    color: #f37b83;
+}
+
 .pink {
     color: #f37b83;
+}
+
+.mb-0 {
+    margin-bottom: 0;
 }
 
 
@@ -664,7 +677,7 @@ h1.entry-title {
 .category-filter {
     position: absolute;
     right: 0;
-    top: -20px;
+    /* top: -20px; */
     z-index: 1;
     width: 25px;
     height: 15px;
@@ -1403,11 +1416,11 @@ p.contact-submit-holder {
 
 
 .contact-link {
-    color: #a88590;
+    /* color: #a88590; */
 }
 
 .contact-link:hover {
-    color: #fff;
+    /* color: #fff; */
 }
 
 .footer {
@@ -1424,7 +1437,38 @@ p.contact-submit-holder {
 }
 
 /* ===================================
-    11. Responsive CSS
+    11. Devblog Section CSS
+====================================== */
+
+.subheading {
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.section-devblog {
+    background-color: #302729;
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    min-height: 100vh;
+}
+
+.devblog-title {
+    margin-bottom: 0 !important;
+    padding: 0;
+}
+
+.devblog-sources {
+    font-size: 12px;
+}
+
+.devblog-white {
+    color: white;
+}
+
+
+/* ===================================
+    12. Responsive CSS
 ====================================== */
 
 @media screen and (max-width: 1599px) {

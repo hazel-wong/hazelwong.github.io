@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <title>Hazel Wong</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Template by CocoBasic" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
+        <meta name="author" content="CocoBasic" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="shortcut icon" href="images/favicon.ico" />      
+        <link href='https://fonts.googleapis.com/css?family=Poppins:400,700,800' rel='stylesheet' type='text/css'>	             
+        <link rel="stylesheet" type="text/css"  href='style.css' />
+
+        <!--[if lt IE 9]>
+                <script src="js/html5.js"></script>            
+                <script src="js/respond.min.js"></script>                   
+        <![endif]-->
+    </head>
+
+    <body class="single-portfolio">
+
+        <!-- Preloader Gif -->
+        <div class="doc-loader"></div>
+
+
+        <div id="content" class="site-content">
+
+            <div class="content-left">
+                <div class="content-left-wrapper">                     
+                    <header>
+                        <div class="toggle-holder">
+                            <div id="toggle">
+                                <div class="menu-line"></div>
+                            </div>
+                        </div>  
+
+                        <div class="top-pagination">
+                            <div class="current-num">
+                                <span>01</span>                                    
+                            </div>
+                            <div class="pagination-div"></div>
+                            <div style="color: white">01</div>
+                        </div>
+
+                        <div class="menu-holder">
+                            <div class="menu-wrapper relative">                                 
+                                <nav id="header-main-menu">
+                                    <ul class="main-menu sm sm-clean">
+                                        <li><a href="index.html#home">Home</a></li>
+                                        <li><a href="index.html#about">About</a></li>
+                                        <li><a href="index.html#portfolio">Portfolio</a></li>                                  
+                                        <li><a href="index.html#resume">Resume</a></li>                                  
+                                        <li><a href="index.html#devblog">Devblog</a></li>                                  
+                                        <li><a href="index.html#contact">Contact</a></li>                                  
+                                    </ul>
+                                </nav>                            
+                            </div>
+                        </div>               
+
+                        <div class="my-info-wrapper">
+                            <img class="my-info-signature" src="images/light-purple-logo.png"/>
+                            <div class="my-info">
+                                <p class="my-info-title">NAME</p>
+                                <p class="my-info-content">Hazel Wong</p>
+                            </div>
+
+                            <div class="my-info">
+                                <p class="my-info-title">ROLE</p>
+                                <p class="my-info-content">Game Designer</p>
+                                <p class="my-info-content">Game Developer</p>
+                                <p class="my-info-content">Researcher</p>
+                            </div>
+
+                            <div class="my-info">
+                                <p class="my-info-title">EMAIL</p>
+                                <p class="my-info-content">hazwong@umich.edu</p>
+                            </div>
+
+                            <!-- <div class="my-info">
+                                <p class="my-info-title">PHONE</p>
+                                <p class="my-info-content">(+987) 987 654 321</p>
+                            </div> -->
+                        </div>   
+
+                        <div class="big-num">                              
+                            <div class="current-big-num">01</div>
+                            <!-- <div class="icon-scroll"></div>   -->
+                        </div>
+                    </header>
+                </div>        
+
+            </div>
+
+            <div class="content-right">  
+                <div class="content-right-wrapper">
+                    <div class="section-devblog">
+                        <div class="section-wrapper block">
+                            <div class="portfolio-item-wrapper center-relative">
+                                <div class="portfolio-content">
+                                    <div class="row">
+                                        <div>
+
+                                            <h2 class="entry-title section-title devblog-title">Implementing a Dungeon Algorithm and Brainstorming Mechanics</h2>
+                                            <p>14 OCT 2020</p>
+
+                                            <p>This week I looked at some random dungeon generation videos and tried implementing one of the algorithms on Unity. This algorithm is based on the room generation algorithm from Binding of Isaac and I picked it as I feel like it could be used for roguelike or puzzle games. I closely followed the video series this week on Unity, which included spawning rooms of the same dimension randomly. I also started brainstorming some mechanics that could be added into the game, which I will try to do next week.</p>
+                                            <br>
+                                            <p class="subheading">The Algorithm</p>
+                                            <p class="mb-0 devblog-white">Criteria</p>
+                                            <p class="mb-0">In this algorithm, there are three criteria:</p>
+                                            <ul>
+                                                <li>• There must be a clear path between start and exit room</li>
+                                                <li>• The path must be closed (no openings leading to nowhere)</li>
+                                                <li>• There must be a start and exit room</li>
+                                            </ul>
+                                            <br>
+                                            <p class="mb-0 devblog-white">Making a clear path</p>
+                                            <p>Each room is made of 10x10 pixels, with different room openings. For each opening, we put a “spawn point” 10 pixels away from the center, which will be the center point of the adjacent room.</p>
+                                            <img src="images/blog/spawnpoint.png" width="300px"/>
+                                            <br><br>
+                                            <p>I made a spawn function that uses randomization to create adjacent rooms. Rooms spawn depending on which door is open in the adjacent room, which is indicated by the spawn points. The algorithm puts all the different types of rooms into lists. For example, all rooms in the bottomRooms list would include rooms that have a top door. Then using Random.Range, the algorithm randomly selects a room to spawn adjacent to a room. Using a rigid body and a 2D collider, we also prevent rooms from spawning on top of each other. </p>
+                                            <p class="mb-0 devblog-white">Picking the Start and Last Room</p>
+                                            <p>The start room is the entry room, the only room that has 4 doors. The rooms are spawned in order using Invoke, which calls the spawning function every 0.1f. One by one, the algorithm adds the room onto the list and the last room added would be selected as the last room.</p>
+                                            <br>
+                                            <p class="subheading">Brainstorming New Mechanics</p>
+                                            <p>I think by picking an interesting hero, we can introduce some interesting mechanics that the puzzles can be based around. A possible hero I thought about this week is an ice cube. With an ice cube we can introduce these mechanics:</p>
+                                            <ul>
+                                                <li>• The ice cube has to navigate its way across a level</li>
+                                                <li>• The ice cube melts a little each move</li>
+                                                <li>• The levels are timed – it has to get to the end of the level before it melts</li>
+                                                <li>• The end goal could be a fridge, so that the ice cube can get back to its original shape</li>
+                                            </ul>
+                                            <br>
+                                            <img src="images/blog/dungeon1.gif" width="200px"/>
+                                            <br><br>
+                                            <img src="images/blog/dungeon2.gif" width="200px"/>
+                                            <br><br>
+                                            <img src="images/blog/dungeon3.gif" width="200px"/>
+                                            <br>
+                                            <br>
+                                            <p class="subheading">Next week's Objectives</p>
+                                            <ul>
+                                                <li>Make tweaks to the algorithm</li>
+                                                <li>Begin implementing some of the mechanics above</li>
+                                                <li>Contact few more stakeholders for interviews</li>
+                                            </ul>
+                                            <br><br>
+                                            <p class="subheading">Sources</p>
+                                            <a href="https://www.youtube.com/watch?v=qAf9axsyijY&ab_channel=Blackthornprod"><p class="devblog-sources">https://www.youtube.com/watch?v=qAf9axsyijY&ab_channel=Blackthornprod</p></a><br>
+
+                                            <p>
+                                                <a class="button" href="index.html#devblog">Return to Devblog</a>                                         
+                                            </p>
+
+                                        </div>
+                                    </div>                                    
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>        
+
+        <!--Load JavaScript-->
+        <script src="js/jquery.js"></script>			                                                               
+        <script src='js/imagesloaded.pkgd.js'></script>                
+        <script src='js/jquery.prettyPhoto.js'></script>                
+        <script src='js/isotope.pkgd.js'></script>                
+        <script src='js/jquery.smartmenus.min.js'></script>                           
+        <script src='js/owl.carousel.min.js'></script>                                                            
+        <script src='js/circle-progress.min.js'></script>                                                            
+        <script src='js/main.js'></script>
+    </body>
+</html>
