@@ -1010,7 +1010,7 @@ li.timeline-event:before {
   width: 3px;
   height: calc(100% - 20px);
   position: absolute;
-  background-color: #ea9491;
+  background-color: #ffffff;
   left: -27px;
   top: 51px;
 }
@@ -1031,7 +1031,7 @@ li.timeline-event span.timeline-circle:after {
   left: -8px;
   top: 11px;
   border-radius: 90%;
-  background-color: #ea9491;
+  background-color: #ffffff;
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -1052,7 +1052,7 @@ span.timeline-circle:before {
   width: 35px;
   height: 35px;
   border-radius: 90%;
-  border: 3px solid #ea9491;
+  border: 3px solid #ffffff;
   position: absolute;
   left: -16px;
   top: 3px;
@@ -1065,7 +1065,7 @@ span.timeline-circle:before {
   left: -98px;
   top: 8px;
   transition: 0.3s;
-  color: #ea9491;
+  color: #ffffff;
   font-weight: 700;
 }
 
